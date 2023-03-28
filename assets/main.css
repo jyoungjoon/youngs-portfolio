@@ -24,7 +24,7 @@ html {
 body {
     background-color: var(--main-color);
     letter-spacing: 0.125rem;
-    width: 70vw;
+    width: 70%;
     margin: 0 auto;
 }
   
@@ -34,9 +34,6 @@ h3 { font-size: 1.5rem; }
 h4 { font-size: 1.2rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: 0.8rem; }
-
-h1, h2, h3, h4, h5, h6 {
-}
 
 /* utilities */
   
@@ -95,6 +92,7 @@ a:hover { text-decoration: underline; }
     z-index: 99;
     position: fixed;
     margin-top: -1.75rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
   
@@ -170,9 +168,6 @@ a:hover { text-decoration: underline; }
     background-color: var(--sub-color);
 }
 
-.container > * {
-}
-
 .container h2 {
     min-width: 15rem;
     max-width: 20rem;
@@ -217,7 +212,6 @@ a:hover { text-decoration: underline; }
 
 .cardImage.starry {
     background-image: url("/assets/images/01-landing-page.png");
-    height: 50rem !important;
 }
 
 .cardImage.comingSoon {
@@ -283,7 +277,7 @@ a:hover { text-decoration: underline; }
 #contact {
     box-sizing: border-box;
     display: flex;
-    width: inherit;
+    width: 100%;
 }
 
 #contactInfo {
@@ -291,6 +285,7 @@ a:hover { text-decoration: underline; }
     width: 50%;
     text-transform: lowercase;
     padding: 1.5rem;
+    line-height: 2;
 }
 
 .footer li img {
@@ -304,9 +299,6 @@ a:hover { text-decoration: underline; }
     height: 100%;
     object-fit: cover;
     padding: 1.5rem;
-}
-
-#contactH2 {
 }
 
 /* footer style */
@@ -341,29 +333,11 @@ a:hover { text-decoration: underline; }
     font-size: 1rem;
 }
 
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+/* Extra small devices (small phones, 480px and down */
+
+@media only screen and (max-width: 479.98px) {
     body {
-        width: 100vw;
-    }
-
-    #about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #about div {
-        width: 100%;
-        height: 45rem;
-        overflow: scroll;
-    }
-
-    #about img {
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
+        width: 95%;
     }
 
     .container {
@@ -373,136 +347,59 @@ a:hover { text-decoration: underline; }
         align-items: center;
     }
 
-    .container h2 {
-        font-size: 4rem;
-        font-weight: 100;
+    .container > h2 {
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
     }
 
-    .container h2 span {
-        font-size: 4rem;
-        font-weight: 100;
-    }
-
-    .projectContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    body {
-        width: 100%;
-    }
-
-    #about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #about div {
-        width: 100%;
-        height: 45rem;
-        overflow: scroll;
-    }
-
-    #about img {
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container h2 {
-        font-size: 4rem;
-        font-weight: 100;
-    }
-
-    .container h2 span {
-        font-size: 4rem;
-        font-weight: 100;
-    }
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-    body {
-        width: 100%;
-    }
-
-    #about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #about div {
-        width: 100%;
-        height: 45rem;
-        overflow: scroll;
-    }
-
-    #about img {
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container h2 {
-        font-size: 4rem;
-        font-weight: 100;
-    }
-
-    .container h2 span {
-        font-size: 4rem;
-        font-weight: 100;
-    }
-}
-
-
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-    body {
+    .aboutP {
         width: 90%;
+        height: 250px;
+        overflow: scroll;
+        margin: 0 auto;
     }
 
-    #about {
+    #about img {
+        width: 20rem;
+        height: 20rem;
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    #projectContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    #about div {
-        width: 100%;
-        height: 45rem;
-        overflow: scroll;
+    #projectContainer .card {
+        max-width: 35rem;
+        min-width: 20rem;
+        min-height: 2
     }
 
-    #about img {
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
+    #contact {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact img {
+        width: 100%;
+    }
+
+    #contactInfo {
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 768px and down) */
+@media only screen and (max-width: 767.98px) and (min-width: 480px) {
+    body {
+        width: 95%;
     }
 
     .container {
@@ -512,21 +409,125 @@ a:hover { text-decoration: underline; }
         align-items: center;
     }
 
-    .container h2 {
-        font-size: 4rem;
-        font-weight: 100;
-
+    .container > h2 {
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
     }
 
-    .container h2 span {
-        font-size: 4rem;
-        font-weight: 100;
+    .aboutP {
+        width: 90%;
+        height: 250px;
+        overflow: scroll;
+        margin: 0 auto;
+    }
+
+    #about img {
+        width: 20rem;
+        height: 20rem;
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    #projectContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projectContainer .card {
+        max-width: 40rem;
+        min-width: 20rem;
+        height: 23rem;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact img {
+        width: 70%;
+    }
+
+    #contactInfo {
+        width: 70%;
     }
 }
 
-/* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
+/* Medium devices (tablets, 1024px and down) */
+@media only screen and (max-width: 1023.98px) and (min-width: 768px) {
     body {
-        width: 65%;
+        width: 95%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container > h2 {
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .aboutP {
+        width: 90%;
+        height: 250px;
+        overflow: scroll;
+        margin: 0 auto;
+    }
+
+    #about img {
+        width: 20rem;
+        height: 20rem;
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    #projectContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projectContainer .card {
+        max-width: 40rem;
+        min-width: 20rem;
+        height: 23rem;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact img {
+        width: 50%;
+    }
+
+    #contactInfo {
+        width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 991.98px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1199.98px) {
+    body {
+        width: 1000px;
     }
 }
