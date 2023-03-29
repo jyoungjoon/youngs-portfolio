@@ -174,9 +174,9 @@ a:hover { text-decoration: underline; }
 .bar2,
 .bar3 {
     background-color: white;
-    width: 35px;
-    height: 5px;
-    margin: 1.5px;
+    width: 30px;
+    height: 3px;
+    margin: 2.5px;
     border: 0.5px solid rgba(0, 0, 0, 0.534);
     border-radius: 10px;
 }
@@ -213,6 +213,7 @@ a:hover { text-decoration: underline; }
     padding: 1.5rem;
     line-height: 2;
     margin-top: -0.7rem;
+    white-space: pre-wrap;
 }
   
 .container:nth-child(odd) {
@@ -241,7 +242,6 @@ a:hover { text-decoration: underline; }
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 0 1.5rem;
 }
 
 .card {
@@ -372,8 +372,8 @@ a:hover { text-decoration: underline; }
     font-size: 1rem;
 }
 
-/* X-Extra small devices (x-small phones, 282px and down */
-@media only screen and (max-width: 281.98px) {
+/* X-Extra small devices (x-small phones, 360px and down */
+@media only screen and (max-width: 359.98px) {
     .header-main h1::after {
         content: "";
     }
@@ -402,10 +402,12 @@ a:hover { text-decoration: underline; }
         animation: move1 0.5s;
         animation-fill-mode: both;
       }
+
     .barnimation2 {
         animation: move2 0.5s;
         animation-fill-mode: both;
       }
+      
     .barnimation3 {
         animation: move3 0.5s;
         animation-fill-mode: both;
@@ -536,10 +538,12 @@ a:hover { text-decoration: underline; }
         animation: move1 0.5s;
         animation-fill-mode: both;
       }
+
     .barnimation2 {
         animation: move2 0.5s;
         animation-fill-mode: both;
       }
+
     .barnimation3 {
         animation: move3 0.5s;
         animation-fill-mode: both;
@@ -627,7 +631,7 @@ a:hover { text-decoration: underline; }
     }
 }
 
-/* Medium devices (tablets, 1024px and down) */
+/* Medium devices (tablets, between 1024px and 768px) */
 @media only screen and (max-width: 1023.98px) and (min-width: 768px) {
     body {
         width: 85%;
@@ -645,6 +649,10 @@ a:hover { text-decoration: underline; }
     .container > h2 {
         font-size: 2.75rem;
         margin-bottom: 2.5rem;
+    }
+
+    .header-main {
+        margin-top: -1.5rem !important;
     }
 
     .side {
@@ -706,12 +714,11 @@ a:hover { text-decoration: underline; }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 991.98px) {
-    #projectContainer {
-        padding: 1.5rem;
-    }
-    
     .side {
         display: none;
+    }
+    .header-main {
+        margin-top: -2.5rem;
     }
 }
 
@@ -723,5 +730,9 @@ a:hover { text-decoration: underline; }
 
     .side {
         display: none;
+    }
+
+    .header-main {
+        margin-top: -2.5rem;
     }
 }
