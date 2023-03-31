@@ -19,7 +19,7 @@ html {
     box-sizing: border-box;
 }
 
-/* set body and heading size */
+/* set body width and margin and headings size */
 
 body {
     background-color: var(--main-color);
@@ -50,7 +50,7 @@ a {
 
 a:hover { text-decoration: underline; }
 
-/* animation */
+/* transform and animation */
 
 #key {
     position: relative;
@@ -80,6 +80,10 @@ a:hover { text-decoration: underline; }
     50% {
         transform: translateY(-0.3rem);
     }
+}
+
+.appear {
+    transform: translateX(-20rem);
 }
 
 /* header */
@@ -126,23 +130,14 @@ a:hover { text-decoration: underline; }
     transition: transform 0.1s ease-in-out;
     margin: 0 0.75rem;
 }
-  
+
 .navbar li:hover { transform: translateY(1.5px); }
 
 /* side navbar */
 
-.hamburger {
-    display: none;
-    z-index: 100;
-}
-
-.hamburger:hover {
-    cursor: pointer;
-}
-
 .side {
     text-align: center;
-    background-color: white;
+    background-color: var(--main-color);
     width: 7rem;
     height: 100vh;
     position: fixed;
@@ -165,41 +160,33 @@ a:hover { text-decoration: underline; }
     transition: transform 0.1s ease-in-out;
     margin: 5rem 0;
 }
-  
+
 .side li:hover { transform: translateY(-1.5px); }
 
-.appear {
-    transform: translateX(-20rem);
+/* hamburger styling */
+
+.hamburger {
+    display: none;
+    z-index: 100;
+}
+
+.hamburger:hover {
+    cursor: pointer;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-    background-color: black;
+    background-color: var(--text-color);
     width: 30px;
     height: 3px;
     margin: 2.5px;
-    border: 0.5px solid white;
-    border-radius: 10px;
+    border: 0.025rem solid var(--main-color);
+    border-radius: 2rem;
 }
 
-/* main styling */
+/* main container and heading styling */
 
-.hero {
-    width: 100%;
-    height: 60vh;
-    background: url(./images/quaritsch-photography-m2zuB8DqwyM-unsplash.jpg) center/cover no-repeat;
-}
-
-#about img {
-    display: inline;
-    width: 150px;
-    height: 150px;
-    float: right;
-    border-radius: 50%;
-    padding: 1.5rem;
-}
-  
 .container {
     display: flex;
     flex-direction: row;
@@ -209,15 +196,6 @@ a:hover { text-decoration: underline; }
     margin: 2.5rem 0;
 }
 
-.aboutP {
-    font-size: 1.75rem;
-    font-weight: 300;
-    padding: 1.5rem;
-    line-height: 2;
-    margin-top: -0.7rem;
-    white-space: pre-wrap;
-}
-  
 .container:nth-child(odd) {
     background-color: var(--sub-color);
 }
@@ -235,7 +213,37 @@ a:hover { text-decoration: underline; }
     padding: 1.5rem;
 }
 
-/* project section style */
+/* hero styling */
+
+.hero {
+    width: 100%;
+    height: 60vh;
+    background: url(./images/quaritsch-photography-m2zuB8DqwyM-unsplash.jpg) center/cover no-repeat;
+}
+
+/* about face picture styling */
+
+#about img {
+    display: inline;
+    width: 150px;
+    height: 150px;
+    float: right;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+/* about paragraph styling */
+
+.aboutP {
+    font-size: 1.75rem;
+    font-weight: 300;
+    padding: 1.5rem;
+    line-height: 2;
+    margin-top: -0.7rem;
+    white-space: wrap;
+}
+
+/* project container style */
   
 #projectContainer {
     width: 100%;
@@ -245,6 +253,8 @@ a:hover { text-decoration: underline; }
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+/* styling for project cards in project section */
 
 .card {
     width: 45%;
@@ -326,12 +336,6 @@ a:hover { text-decoration: underline; }
     text-transform: lowercase;
     padding: 1.5rem;
     line-height: 2;
-}
-
-.footer li img {
-    width: 5rem;
-    height: 5rem;
-    object-fit: contain;
 }
 
 #contact img {
