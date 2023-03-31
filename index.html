@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <title>Young's Portfolio</title>
+    <title>Portfolio of Young</title>
 </head>
 
 <body>
+    <!-- header -->
     <header class="header-main">
         <h1><a href="index.html">YOUNG<span class="accent">/</span>JANG</a></h1>
+
+    <!-- navigation bar -->
         <nav class="navbar">
             <ul>
                 <li><a href="#about">About</a></li><span class="accent">/</span>
@@ -27,13 +31,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hamburger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </header>
-        <!-- Animated Side Navigation Bar: Start -->
+        <!-- side navigation bar -->
         <nav class="side">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -41,55 +39,61 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- hamburger icon -->
         <div class="hamburger">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-        <!-- Animated Side Navigation Bar: End -->
+    </header>
+    <!-- main -->
     <main>
+        <!-- hero -->
         <section class="container containerHero">
             <div class="hero"></div>
         </section>
+        <!-- about -->
         <section class="container" id="about">
             <h2><span class="accent">#</span>about</h2>
             <div>
-                <img src="assets/images/facecomic.jpg">
-                <p class="aboutP">Hello there, fellow digital enthusiasts! I'm a student of UC Berkeley's Full Stack Flex Coding Boot Camp with a unique twist - I'm also a proud truck driver, a beloved husband, and a father of two adorable sons. While my days are filled with managing logistics and navigating the open road, my nights are dedicated to coding and crafting innovative websites that leave a lasting impression.
-
-                    <br> As a junior developer, I bring a fresh perspective and an eagerness to learn to every project I tackle. But my experience as a truck driver has instilled in me an attentive mindset and a tireless work ethic that drives me to exceed expectations every time.
-                    
-                    <br> I understand the importance of delivering quality work that makes a difference in people's lives - whether it's a smooth shipment or a flawless website. So let's crank the <span id="key">engine</span> and create something amazing together!</p>
+                <img src="assets/images/facecomic.jpg" alt="Young's passport-style photo">
+                <p class="aboutP"> Welcome to my portfolio! I'm a student of UC Berkeley's Full Stack Flex Coding Boot Camp with a unique twist - I'm also a proud truck driver, a beloved husband, and a father of two adorable sons. While my days are filled with managing logistics and navigating the open road, my nights are dedicated to coding and crafting innovative websites that leave a lasting impression. 
+                    As a junior developer, I bring a fresh perspective and an eagerness to learn to every project I tackle. But my experience as a truck driver has instilled in me an attentive mindset and a tireless work ethic that drives me to exceed expectations every time.
+                    I understand the importance of delivering quality work that makes a difference in people's lives - whether it's a smooth shipment or a flawless website. So let's crank the <span id="key">engine</span> and create something amazing together!</p>
             </div>
         </section>
+        <!-- project -->
         <section class="container projects">
             <h2><span class="accent">#</span>projects</h2>
-        <div id="projectContainer">
-            <div class="card featured">
-                <a href="https://github.com"><img class="cardImage" src="assets/images/01-landing-page.png"></a>
-                <a href="https://github.com"><h3 class="starry">Starry Landing Page</h3></a>
-            </div>
-            <div class="card">
-                <a href="https://github.com"><img class="cardImage" src="assets/images/code-refactoring.png"></a>
-                <a href="https://github.com"><h3 class="refactor">Code Refactoring</h3></a>
+            <div id="projectContainer">
+                <!-- project cards -->
+                <div class="card featured">
+                    <a href="https://jyoungjoon.github.io/01-landing-page/"><img class="cardImage" src="assets/images/01-landing-page.png" alt="a screenshot of a starry landing page project"></a>
+                    <a href="https://jyoungjoon.github.io/01-landing-page/"><h3 class="starry">Starry Landing Page</h3></a>
                 </div>
-            <div class="card">
-                <a href="https://github.com"><img class="cardImage" src="assets/images/banana-flexbox.png"></a>
-                <a href="https://github.com"><h3 class="banana">Banana-Flexbox</h3></a>
+                <div class="card">
+                    <a href="https://jyoungjoon.github.io/coderefactoring-horiseon/"><img class="cardImage" src="assets/images/code-refactoring.png" alt="a screenshot of Horiseon code refactoring project"></a>
+                    <a href="https://jyoungjoon.github.io/coderefactoring-horiseon/"><h3 class="refactor">Code Refactoring</h3></a>
+                    </div>
+                <div class="card">
+                    <a href="https://jyoungjoon.github.io/understand-flexbox/"><img class="cardImage" src="assets/images/banana-flexbox.png" alt="a screenshot of Banana-flexbox project"></a>
+                    <a href="https://jyoungjoon.github.io/understand-flexbox/"><h3 class="banana">Banana-Flexbox</h3></a>
+                </div>
+                <div class="card comingSoon">
+                    <img class="cardImage" src="assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" alt="a shop-window with 'coming soon' written on it">
+                    <h3>COMING SOON</h3>
+                </div>
+                <div class="card comingSoon">
+                    <img class="cardImage" src="assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" alt="a shop-window with 'coming soon' written on it">
+                    <h3>COMING SOON</h3>
+                </div>
             </div>
-            <div class="card comingSoon">
-                <img class="cardImage" src="assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg">
-                <h3>COMING SOON</h3>
-            </div>
-            <div class="card comingSoon">
-                <img class="cardImage" src="assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg">
-                <h3>COMING SOON</h3>
-            </div>
-        </div>
         </section>
+        <!-- contact -->
         <section class="container">
             <h2 id="contactH2"><span class="accent">#</span>contact</h2>
             <section id="contact">
+                <!-- contact info section -->
                 <div id="contactInfo">
                     <ul>
                         <li>first name + last name: young jang</li>
@@ -99,17 +103,19 @@
                         <li>Email:<a href="mailto:abc@abc.com">abc@abc.com</a></li>
                     </ul>
                 </div>
-                <img src="assets/images/bench-accounting-nvzvOPQW0gc-unsplash.jpg">
+                <!-- contact section side image -->
+                <img src="assets/images/bench-accounting-nvzvOPQW0gc-unsplash.jpg" alt="single workspace photo with white background">
             </section>   
         </section>
     </main>
+    <!-- footer -->
     <footer class="container footer">
         <div>
             <ul>
-                <li><a href="mailto:abc@abc.com"><img src="assets/images/envelope.256x193.png"></a></li>
-                <li><a href="https://github.com"><img src="assets/images/github-original-wordmark.256x253.png"></a></li>
-                <li><a href="https://www.linkedin.com/in/young-jang-0b0b1b1b1/"><img src="assets/images/social-linkedin.256x256.png"></a></li>
-                <li><a href="https://www.twitter.com"><img src="assets/images/twitter.256x256.png"></a></li>
+                <li><a href="mailto:lifescriptified@gmail.com"><img src="assets/images/envelope.256x193.png" alt="an email icon"></a></li>
+                <li><a href="https://github.com/jyoungjoon"><img src="assets/images/github-original-wordmark.256x253.png" alt="a github icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/young-jang-3085ba2b/"><img src="assets/images/social-linkedin.256x256.png" alt="a linked-in icon"></a></li>
+                <li><a href="https://twitter.com/lif3scriptified"><img src="assets/images/twitter.256x256.png" alt="a twitter icon"></a></li>
             </ul>
             <p>©2023 All Rights Reserved.</p>
             <p>Made with <i class="em em-coffee" aria-role="presentation" aria-label="HOT BEVERAGE"></i> & <i class="em em-heart" aria-role="presentation" aria-label="HEAVY BLACK HEART"></i></p>
